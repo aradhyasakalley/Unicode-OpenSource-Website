@@ -3,18 +3,18 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("data.json")
         .then(response => response.json())
         .then(data => {
-            const studentList = document.querySelector(".student-list");
+            const studentContainer = document.querySelector(".student-container");
             data.students.forEach(student => {
-                const studentListItem = createStudentListItem(student);
-                studentList.appendChild(studentListItem);
+                const studentCard = createStudentCard(student);
+                studentContainer.appendChild(studentCard);
             });
         })
         .catch(error => console.error("Error loading data:", error));
 });
 
-function createStudentListItem(student) {
-    const listItem = document.createElement("li");
-    listItem.classList.add("student-card");
+function createStudentCard(student) {
+    const card = document.createElement("div");
+    card.classList.add("student-card");
 
     const nameElement = document.createElement("h2");
     nameElement.textContent = student.name;
@@ -28,10 +28,10 @@ function createStudentListItem(student) {
     const branchElement = document.createElement("p");
     branchElement.textContent = `Branch: ${student.branch}`;
 
-    listItem.appendChild(nameElement);
-    listItem.appendChild(sapidElement);
-    listItem.appendChild(genderElement);
-    listItem.appendChild(branchElement);
+    card.appendChild(nameElement);
+    card.appendChild(sapidElement);
+    card.appendChild(genderElement);
+    card.appendChild(branchElement);
 
-    return listItem;
+    return card;
 }

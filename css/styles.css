@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0; /* Set a background color for the body */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+h1 {
+    color: #333;
+    margin: 20px 0; /* Add some space between the title and the list */
+}
+
+.student-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Add some space between cards */
+}
+
+.student-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.student-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.student-card p {
+    margin: 5px 0;
+}
+
+/* Add hover effect to cards */
+.student-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}

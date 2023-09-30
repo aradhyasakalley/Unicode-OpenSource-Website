@@ -1,34 +1,9 @@
 {
-  "students": [
-    {
-      "name": "Aman Nambisan",
-      "sapid": "60004210166",
-      "gender": "Male",
-      "branch": "Computer Science"
-    },
-    {
-      "name": "Aradhya Johnson",
-      "sapid": "987654321",
-      "gender": "Female",
-      "branch": "Electrical Engineering"
-    },
-    {
-      "name": "Alice Johnson",
-      "sapid": "543216789",
-      "gender": "Female",
-      "branch": "Mechanical Engineering"
-    },
-    {
-      "name": "Aradhya Johnson",
-      "sapid": "543216789",
-      "gender": "Male",
-      "branch": "Mechanical Engineering"
-    },
-    {
-      "name": "Ace Johnson",
-      "sapid": "543216789",
-      "gender": "Female",
-      "branch": "Mechanical Engineering"
-    }
+  "results": [
+      "Yuvraj",
+      "Aradhya",
+      "Mohit",
+      "Darshit",
+      "Smit"
   ]
 }

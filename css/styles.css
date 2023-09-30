@@ -1,51 +1,55 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f0f0f0; /* Set a background color for the body */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0; /* Set a background color for the body */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
 h1 {
-    color: #333;
-    margin: 20px 0; /* Add some space between the title and the list */
+  color: #333;
+  margin: 20px 0; /* Add some space between the title and the list */
 }
 
 .student-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Center the content vertically */
-    flex-wrap: wrap;
-    gap: 20px; /* Add some space between cards */
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Center the content vertically */
+  flex-wrap: wrap;
+  gap: 20px; /* Add some space between cards */
+  padding: 20px;
+}
+
+.title {
+  color: purple;
 }
 
 .student-card {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Improved shadow effect */
-    padding: 20px;
-    max-width: 300px;
-    text-align: center;
-    transition: transform 0.2s, box-shadow 0.2s;
-    margin: 10px; /* Added margin to cards for better spacing */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Improved shadow effect */
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin: 10px; /* Added margin to cards for better spacing */
 }
 
 .student-card h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
 }
 
 .student-card p {
-    margin: 5px 0;
-    color: #666;
+  margin: 5px 0;
+  color: #666;
 }
 
 /* Add hover effect to cards */
 .student-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Improved hover shadow effect */
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Improved hover shadow effect */
 }
